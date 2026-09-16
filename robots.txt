@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://arnob58.com/sitemap.xml
