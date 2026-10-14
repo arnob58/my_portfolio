@@ -1,0 +1,1 @@
+The Market58 and AudienceLab demos are embedded directly in both portfolio pages. Use the controls inside the demo frames or Expand to open a larger view. All outputs are predetermined. No API requests. For best local testing, run python -m http.server 8000 from the arnob58-landing folder and visit http://localhost:8000 . Do not deploy until reviewed.

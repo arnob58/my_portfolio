@@ -1,300 +1,374 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#090b0d" />
-  <meta name="description" content="Robert Mark Arnob D' Costa — digital marketing, content strategy, paid growth, and creative experimentation." />
-  <meta property="og:title" content="Arnob D' Costa — Marketing × Strategy × Creative" />
-  <meta property="og:description" content="A scroll-driven portfolio of real-estate marketing, content strategy, campaign creative, paid growth experiments, and long-form writing." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://arnob58.com/" />
-  <meta property="og:image" content="https://arnob58.com/assets/images/og-cover.jpg" />
-  <title>Arnob D' Costa — Marketing × Strategy × Creative</title>
-  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="styles.css" />
-</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Robert Mark Arnob D' Costa — Digital Marketer & Social Media Coordinator in Toronto</title>
+<meta name="description" content="Robert Mark Arnob D' Costa is a Toronto-based Digital Marketer and Social Media Coordinator. Hands-on experience: campaigns planned and run, analytics that drove decisions, audience research that shaped strategy.">
+<!-- TODO: paste your GA4 measurement ID below and uncomment to enable conversion tracking.
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-XXXXXXX');
+</script>
+-->
+<style>
+  :root{
+    --ink:#1a1a1a; --muted:#5b5b5b; --paper:#ffffff; --wash:#f6f5f1;
+    --accent:#1f5eff; --accent-ink:#ffffff; --line:#e8e6e0; --radius:14px;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,"Helvetica Neue",Arial,sans-serif;
+    color:var(--ink); background:var(--paper); line-height:1.65; font-size:17px;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:960px; margin:0 auto; padding:0 22px;}
+  .nav{position:sticky; top:0; z-index:50; background:rgba(255,255,255,.94); backdrop-filter:blur(8px); border-bottom:1px solid var(--line);}
+  .nav .wrap{display:flex; align-items:center; justify-content:space-between; padding-top:12px; padding-bottom:12px;}
+  .brand{font-weight:700; font-size:16px; letter-spacing:.2px; text-decoration:none; color:var(--ink);}
+  .brand small{font-weight:400; color:var(--muted);}
+  .btn{display:inline-block; background:var(--accent); color:var(--accent-ink); text-decoration:none;
+    padding:12px 22px; border-radius:999px; font-weight:600; font-size:15px; border:0; cursor:pointer;}
+  .btn:hover{filter:brightness(.93);}
+  .btn.ghost{background:transparent; color:var(--ink); border:1.5px solid var(--ink);}
+  .btn.ghost:hover{background:var(--ink); color:#fff;}
+  .btn.small{padding:9px 18px; font-size:14px;}
+  .hero{padding:84px 0 64px;}
+  .eyebrow{display:inline-block; font-size:13px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase;
+    color:var(--accent); margin-bottom:18px;}
+  h1{font-size:clamp(38px,6vw,60px); line-height:1.12; letter-spacing:-1px; margin-bottom:20px;}
+  .lede{font-size:20px; color:var(--muted); max-width:640px; margin-bottom:32px;}
+  .cta-row{display:flex; gap:14px; flex-wrap:wrap; align-items:center;}
+  .hero-grid{display:grid; grid-template-columns:1fr; gap:40px; align-items:center;}
+  .hero img{width:100%; max-width:340px; border-radius:var(--radius); display:block;}
+  @media(min-width:760px){ .hero-grid{grid-template-columns:1.5fr 1fr;} }
+  section.block{padding:64px 0; border-top:1px solid var(--line);}
+  .kicker{font-size:13px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--muted); margin-bottom:10px;}
+  h2{font-size:clamp(28px,4vw,38px); letter-spacing:-.5px; line-height:1.2; margin-bottom:16px;}
+  .body-copy{color:var(--muted); max-width:680px; margin-bottom:18px;}
+  .body-copy strong{color:var(--ink);}
+  .card{background:var(--wash); border:1px solid var(--line); border-radius:var(--radius); padding:28px; margin:22px 0;}
+  .card h3{font-size:20px; margin-bottom:10px;}
+  .card p{color:var(--muted); margin-bottom:12px;}
+  .card p:last-child{margin-bottom:0;}
+  .tag-list{display:flex; flex-wrap:wrap; gap:8px; margin:16px 0 4px; list-style:none;}
+  .tag-list li{background:#fff; border:1px solid var(--line); border-radius:999px; padding:6px 14px; font-size:13.5px; color:var(--muted);}
+  .two-col{display:grid; grid-template-columns:1fr; gap:22px;}
+  @media(min-width:760px){ .two-col{grid-template-columns:1fr 1fr;} }
+  .door{background:var(--wash); border:1px solid var(--line); border-radius:var(--radius); padding:32px; display:flex; flex-direction:column; gap:14px;}
+  .door h3{font-size:22px;}
+  .door p{color:var(--muted); flex:1;}
+  .door .btn{align-self:flex-start;}
+  .checklist{list-style:none; margin:14px 0;}
+  .checklist li{padding:10px 0 10px 34px; position:relative; color:var(--muted);}
+  .checklist li strong{color:var(--ink);}
+  .checklist li::before{content:"✓"; position:absolute; left:6px; top:10px; color:var(--accent); font-weight:700;}
+  .timeline{list-style:none; margin-top:8px;}
+  .timeline li{padding:16px 0; border-bottom:1px solid var(--line); display:flex; gap:16px; flex-wrap:wrap;}
+  .timeline li:last-child{border-bottom:0;}
+  .timeline .when{flex:0 0 150px; font-size:14px; color:var(--muted);}
+  .timeline .what strong{display:block; font-size:16.5px;}
+  .timeline .what span{color:var(--muted); font-size:15px;}
+  .final{background:var(--ink); color:#fff; border-radius:20px; padding:56px 40px; text-align:center; margin:64px 0;}
+  .final h2{color:#fff;}
+  .final p{color:#c9c9c9; max-width:560px; margin:0 auto 28px;}
+  .final .btn.ghost{border-color:#fff; color:#fff;}
+  .final .btn.ghost:hover{background:#fff; color:var(--ink);}
+  footer{padding:36px 0 48px; color:var(--muted); font-size:14px; border-top:1px solid var(--line);}
+  footer a{color:var(--muted);}
+  a{color:var(--accent);}
+</style>
+
+<style>
+.proof-card{display:grid;grid-template-columns:90px 1fr;gap:20px;align-items:start;background:#f6f5f1;border:1px solid #e8e6e0;border-radius:18px;padding:24px;margin:18px 0}
+.proof-avatar{width:82px;height:82px;object-fit:cover;object-position:center 47%;border-radius:50%}
+.proof-card blockquote{font-size:clamp(19px,3vw,25px);font-weight:650;line-height:1.45;margin:0 0 12px}
+.proof-card a,.work-brand a{color:#1f5eff}
+.proof-note{font-size:13px;color:#5b5b5b}
+.work-brand{display:flex;align-items:center;gap:12px;margin:12px 0}
+.work-logo{width:54px;height:54px;border-radius:12px;background:#eef2ff;color:#1a3672;display:grid;place-items:center;font-weight:800;font-size:13px;letter-spacing:-.6px;border:1px solid #dde4f1;flex-shrink:0}
+.work-logo.scuba{background:#e7f7ff;color:#006e9c;font-size:20px}
+.carousel{position:relative;margin:22px 0;background:#f6f5f1;border:1px solid #e8e6e0;border-radius:16px;overflow:hidden}
+.carousel-track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}
+.carousel-track::-webkit-scrollbar{display:none}
+.carousel-slide{flex:0 0 100%;scroll-snap-align:start;margin:0}
+.carousel-slide img{display:block;width:100%;height:clamp(240px,48vw,480px);object-fit:contain;background:#eeece7}
+.carousel-slide figcaption{font-size:13px;color:#5b5b5b;padding:10px 60px;text-align:center}
+.carousel-arrow{position:absolute;top:43%;transform:translateY(-50%);border:0;background:rgba(25,25,25,.82);color:white;border-radius:50%;width:40px;height:40px;cursor:pointer;font-size:24px;z-index:2}
+.carousel-prev{left:10px}.carousel-next{right:10px}
+.carousel-count{text-align:center;padding:0 0 12px;color:#5b5b5b;font-size:13px}
+@media(max-width:540px){.proof-card{grid-template-columns:1fr}.proof-avatar{width:70px;height:70px}}
+</style>
+
+<style>
+.product-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:24px 0}
+.product-card{padding:26px;border:1px solid #e8e6e0;background:linear-gradient(140deg,#f9faff,#f6f5f1);border-radius:19px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.product-card.lab-card{background:linear-gradient(130deg,#eefaf8,#f5f9fc)}
+.product-top,.product-numbers,.product-actions{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.product-top{justify-content:space-between}.product-icon{display:grid;place-items:center;width:52px;height:52px;border-radius:14px;background:#14233d;color:white;font-weight:800;font-size:22px}.product-icon span{color:#8ca7ff;font-size:15px}.product-icon.lab-icon{background:#102a3b;color:#68e4d0;font-size:36px}
+.product-preview{width:100%;height:190px;object-fit:cover;object-position:center;border:1px solid #dce4ef;border-radius:10px;background:#eef3f8}.product-card h3{font-size:25px;line-height:1.2;margin:4px 0 0}.product-card>p{font-size:15px;color:#51555f;line-height:1.6}
+.labelchip{font-size:10px;letter-spacing:.7px;font-weight:750;color:#275778;background:#e6f2fc;border:1px solid #d5e5f2;border-radius:20px;padding:6px 10px}
+.product-numbers{margin-top:auto;align-items:stretch}.product-numbers span{flex:1;min-width:80px;border-radius:11px;background:#fff;border:1px solid #e6e9ef;padding:9px 10px;display:flex;flex-direction:column}
+.product-numbers strong{font-size:21px;color:#122540}.product-numbers small{font-size:11px;color:#5b6068;line-height:1.3}
+.product-actions{gap:8px}.product-actions .btn{font-size:12px;padding:10px 15px}.product-actions .btn.ghost{background:transparent}
+.product-card p.product-foot{font-size:11px;color:#6b7480;margin:0}
+@media(max-width:760px){.product-grid{grid-template-columns:1fr}.product-card{padding:22px}.product-actions .btn{flex:1;text-align:center}}
+</style><style>
+/* Embedded product walkthroughs */
+.interactive-demo-shell{margin:16px 0 20px;border:1px solid rgba(125,149,180,.36);border-radius:13px;overflow:hidden;background:#0d1422;width:100%;min-width:0}
+.interactive-demo-bar{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 13px;color:#cbd5e1;background:#142237;font-size:10px;letter-spacing:.08em;font-weight:700}
+.interactive-demo-bar a{color:#9fddff;text-decoration:underline;white-space:nowrap}
+.interactive-demo-frame{display:block;width:100%;height:600px;border:0;background:#101928}
+@media(max-width:800px){.product-grid{grid-template-columns:minmax(0,1fr)!important}.interactive-demo-frame{height:560px}.interactive-demo-bar{font-size:9px;letter-spacing:0}}
+</style><style>
+.company-logo{width:84px;height:64px;object-fit:contain;display:block;margin:0 0 10px;border-radius:8px}
+.company-logo.scuba{background:#0a0c0e;padding:6px;box-sizing:border-box}
+.company-logo.middlehouse{background:#fff}
+.proof-card{grid-template-columns:130px 1fr!important;align-items:center!important}
+.proof-avatar{width:126px!important;height:126px!important;object-fit:cover!important;object-position:center center!important;border-radius:50%;background:#fff}
+@media(max-width:560px){.proof-card{grid-template-columns:1fr!important}.proof-avatar{width:112px!important;height:112px!important}}
+</style><style>.merged-demo-grid{margin-top:28px}.merged-demo-grid .product-grid{margin-top:0}</style><link rel="stylesheet" href="motion.css">
+<style>
+/* Clean rectangular portrait: original face and upper body remain visible. */
+.hero-photo-wrap{width:100%;max-width:380px;justify-self:center;align-self:center;overflow:hidden;border-radius:24px;background:#e5e9e6;box-shadow:0 16px 48px rgba(17,30,30,.12)}
+.hero-photo-wrap img{display:block!important;width:100%!important;max-width:none!important;height:auto!important;aspect-ratio:4/5;object-fit:cover!important;object-position:center 32%;border-radius:0!important}
+@media(max-width:759px){.hero-photo-wrap{max-width:310px;margin:0 auto}}
+</style><link rel="stylesheet" href="heritage-gallery.css">
+<link rel="stylesheet" href="strategy-reels.css"></head>
 <body>
-  <canvas id="webgl" aria-hidden="true"></canvas>
-  <div class="grain" aria-hidden="true"></div>
-  <div class="scroll-progress" aria-hidden="true"><span></span></div>
 
-  <header class="site-nav" id="top">
-    <a class="brand" href="#top" aria-label="Back to top">
-      <span class="brand-mark">A</span><span class="brand-word">ARNOB</span>
-    </a>
-    <nav aria-label="Primary navigation">
-      <a href="#work">Work</a>
-      <a href="#strategy">Strategy</a>
-      <a href="#motion">Motion</a>
-      <a href="#experiments">Experiments</a>
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top" aria-label="Robert Mark Arnob D' Costa — back to top">Robert Mark Arnob D' Costa <small>· Toronto</small></a>
+    <nav class="nav-links" aria-label="Portfolio sections">
+      <a href="#ai-projects">Building now</a>
+      <a href="#experience">Experience</a>
+      <a href="#middlehouse-gallery">MiddleHouse</a>
+      <a href="#paid">Paid media</a>
+      <a href="#duties">Expertise</a>
+      <a href="#proof">Feedback</a>
     </nav>
-    <a class="nav-cta" href="assets/docs/arnob-dcosta-resume.pdf" target="_blank" rel="noopener">Résumé ↗</a>
-  </header>
+    <a class="btn small nav-action" href="#contact">Contact me</a>
+  </div>
+</header>
+<div class="scroll-progress" aria-hidden="true"></div>
 
-  <main>
-    <section class="hero section-pad" aria-labelledby="hero-title">
-      <div class="hero-copy reveal">
-        <p class="eyebrow">DIGITAL MARKETING · CREATIVE STRATEGY · ANALYTICS</p>
-        <h1 id="hero-title">I turn <em>insight</em><br/>into work people<br/><span class="outline">notice.</span></h1>
-        <p class="hero-lede">Hi — I’m Robert. You can also call me Arnob. I strategize and design digital content around audience problems, creative hypotheses, and measurable outcomes.</p>
-        <div class="hero-actions">
-          <a class="button primary" href="#work">Explore the work ↓</a>
-          <a class="button ghost" href="assets/docs/arnob-dcosta-resume.pdf" target="_blank" rel="noopener">View résumé ↗</a>
-          <a class="button ghost" href="assets/docs/full-portfolio.pdf" target="_blank" rel="noopener">Full portfolio ↗</a>
-        </div>
-        <div class="hero-tags" aria-label="Areas of focus">
-          <span>Content strategy</span><span>Social creative</span><span>Paid media</span><span>Research</span>
-        </div>
-      </div>
+<main id="top">
+  <div class="wrap">
 
-      <div class="hero-portrait reveal delay-1" data-tilt>
-        <div class="portrait-orbit" aria-hidden="true"></div>
-        <img src="assets/images/profile.webp" alt="Robert Mark Arnob D' Costa" />
-        <div class="portrait-card glass">
-          <span class="micro">BASED IN CANADA</span>
-          <strong>Marketing × data × creative</strong>
-        </div>
-      </div>
-
-      <a class="scroll-cue" href="#work" aria-label="Scroll to work"><span></span>SCROLL</a>
-    </section>
-
-    <section class="capability-band section-pad reveal" aria-label="Core capabilities">
-      <div class="capability-intro"><span class="micro">HOW I WORK</span><strong>Strategy grounded in audience insight — then built, tested, and measured.</strong></div>
-      <div class="capability"><span>01</span><strong>Audience Research</strong><small>Personas · pain points · competitor analysis</small></div>
-      <div class="capability"><span>02</span><strong>Creative Strategy</strong><small>Positioning · funnels · content systems</small></div>
-      <div class="capability"><span>03</span><strong>Performance Analysis</strong><small>Campaign data · testing · optimization</small></div>
-    </section>
-
-    <section id="work" class="work section-pad">
-      <div class="section-head reveal">
-        <p class="kicker">01 / CLIENT WORK</p>
-        <h2>MiddleHouse<br/><span>Developments.</span></h2>
-        <p>Real-estate social creative built from audience tension, not decoration. Scroll through the campaign logic; the artwork updates beside it.</p>
-      </div>
-
-      <div class="case-scroller">
-        <div class="case-visual-wrap">
-          <div class="case-visual glass" data-tilt>
-            <img id="case-visual" src="assets/images/middlehouse-traffic.webp" alt="Gain Back the Time campaign creative" />
-            <div class="case-counter"><span id="case-current">01</span><span>/ 07</span></div>
+    <!-- HERO -->
+    <div class="hero">
+      <div class="hero-grid">
+        <div>
+          <span class="eyebrow">Digital Marketer · Social Media Coordinator · Toronto</span>
+          <h1>I learn marketing by building it.</h1>
+          <p class="lede">Hey! I'm Robert, a digital marketer with hands-on experience in organic content, social media, and paid campaigns. I combine creative strategy, audience research, analytics, and AI-powered tools to turn ideas into measurable marketing work.</p>
+          <div class="cta-row">
+            <a class="btn" href="#ai-projects">Explore what I’m building ↓</a>
+            <a class="btn ghost" href="#experience">See my experience ↓</a>
           </div>
         </div>
-
-        <div class="case-notes">
-          <article class="case-note active" data-image="assets/images/middlehouse-traffic.webp" data-alt="Gain Back the Time campaign creative">
-            <p class="case-index">01 · COMMUTER MARKET</p>
-            <h3>Gain Back the Time</h3>
-            <p class="case-big">Make commute pain feel personal: lost time with the people who matter.</p>
-            <dl><div><dt>Objective</dt><dd>Raise awareness around the lifestyle cost of long daily commutes.</dd></div><div><dt>Audience</dt><dd>Working professionals 25–45 and parents commuting between home and work.</dd></div><div><dt>Pain point</dt><dd>Time lost in traffic and reduced time with family.</dd></div><div><dt>KPI</dt><dd>Engagement: likes, comments, shares.</dd></div></dl>
-          </article>
-
-          <article class="case-note" data-image="assets/images/middlehouse-space.webp" data-alt="Lack of Space campaign creative">
-            <p class="case-index">02 · GROWING FAMILY</p>
-            <h3>Lack of Space</h3>
-            <p class="case-big">Turn overcrowding into a story about the next family chapter being put on hold.</p>
-            <dl><div><dt>Objective</dt><dd>Build awareness among families outgrowing their current living space.</dd></div><div><dt>Audience</dt><dd>Young parents and couples planning to have children.</dd></div><div><dt>Pain point</dt><dd>Overcrowding, storage limits, and a smaller condo or apartment.</dd></div><div><dt>KPI</dt><dd>Engagement: likes, comments, shares.</dd></div></dl>
-          </article>
-
-          <article class="case-note" data-image="assets/images/middlehouse-walking.webp" data-alt="Walking Home campaign creative">
-            <p class="case-index">03 · RETIREE MARKET</p>
-            <h3>Walking Home</h3>
-            <p class="case-big">Contrast elevator dependence with the simplicity of direct, walkable access.</p>
-            <dl><div><dt>Objective</dt><dd>Raise brand awareness among retirees.</dd></div><div><dt>Audience</dt><dd>Urban residents aged 45+.</dd></div><div><dt>Pain point</dt><dd>Restricted mobility and the friction of shared vertical access.</dd></div><div><dt>KPI</dt><dd>Engagement: likes, comments, shares.</dd></div></dl>
-          </article>
-
-          <article class="case-note" data-image="assets/images/middlehouse-gym.webp" data-alt="Condo gym campaign creative">
-            <p class="case-index">04 · VALUE-CONSCIOUS BUYER</p>
-            <h3>Don’t Rent a Condo for the Gym</h3>
-            <p class="case-big">Question recurring fees for features a buyer may rarely use.</p>
-            <dl><div><dt>Objective</dt><dd>Raise awareness around the mismatch between condo fees and personal value.</dd></div><div><dt>Audience</dt><dd>First-time buyers and young urban professionals.</dd></div><div><dt>Pain point</dt><dd>Paying recurring fees for shared amenities that may go unused.</dd></div><div><dt>Funnel</dt><dd>Awareness.</dd></div></dl>
-          </article>
-
-          <article class="case-note" data-image="assets/images/middlehouse-paint.webp" data-alt="Renovation campaign creative">
-            <p class="case-index">05 · YOUNG ADULT MARKET</p>
-            <h3>Don’t Pay to Paint</h3>
-            <p class="case-big">Reframe a “new home” around the hidden expense and hassle that can follow the purchase.</p>
-            <dl><div><dt>Objective</dt><dd>Raise awareness among young adults and couples.</dd></div><div><dt>Audience</dt><dd>Urban residents aged 20–40.</dd></div><div><dt>Pain point</dt><dd>Expensive renovation costs after buying a home.</dd></div><div><dt>Message</dt><dd>Enjoy the home without immediately paying again to make it livable.</dd></div></dl>
-          </article>
-
-          <article class="case-note" data-image="assets/images/middlehouse-front-door.webp" data-alt="Your Kids Deserve a Front Door campaign creative">
-            <p class="case-index">06 · FAMILY LIFESTYLE</p>
-            <h3>Your Kids Deserve a Front Door</h3>
-            <p class="case-big">Translate a physical feature into independence, outdoor access, and family-oriented living.</p>
-            <dl><div><dt>Objective</dt><dd>Raise awareness among young families considering their next home.</dd></div><div><dt>Audience</dt><dd>Young parents and couples planning to have children.</dd></div><div><dt>Pain point</dt><dd>Limited independence and outdoor access in high-density housing.</dd></div><div><dt>Funnel</dt><dd>Awareness.</dd></div></dl>
-          </article>
-
-          <article class="case-note" data-image="assets/images/middlehouse-mortgage.webp" data-alt="Mortgage and condo fees campaign creative">
-            <p class="case-index">07 · COST-CONSCIOUS BUYER</p>
-            <h3>Beyond the Mortgage</h3>
-            <p class="case-big">Move the affordability conversation from the headline mortgage to the recurring cost of ownership.</p>
-            <dl><div><dt>Objective</dt><dd>Raise awareness of recurring costs associated with condo ownership.</dd></div><div><dt>Audience</dt><dd>First-time buyers, young professionals and couples.</dd></div><div><dt>Pain point</dt><dd>Condo fees beyond the mortgage payment.</dd></div><div><dt>KPI</dt><dd>Engagement: likes, comments, shares.</dd></div></dl>
-          </article>
+        <div class="hero-photo-wrap">
+          <img src="images/profile-framed.webp" fetchpriority="high" decoding="async" alt="Portrait of Robert Mark Arnob D' Costa">
         </div>
       </div>
+    </div>
+
+    <!-- TEER-1 DUTY MAP -->
+    <section class="block" id="ai-projects">
+      <p class="kicker">What I'm building now</p>
+      <h2>Market58, with AudienceLab.</h2>
+      <p class="body-copy"><strong>Market58</strong> is a social listening and market research app I built to give small businesses the kind of audience intelligence usually reserved for big budgets. It collects public conversations from YouTube and Google Search and imports discussions from other platforms, including Reddit, then classifies records by sentiment, intent, and funnel stage.</p>
+      <p class="body-copy"><strong>AudienceLab</strong> is the newest part: it turns that classified conversation data into audience personas, and then into synthetic interviews, so you can pressure-test messaging before spending a dollar of media.</p>
+      <div class="card">
+        <h3>Why this is a marketing project, not just a coding project</h3>
+        <ul class="checklist">
+          <li><strong>Designed the pipeline</strong> like a researcher: collect, classify, then decide.</li>
+          <li><strong>Built the collector plugins</strong> myself, including a platform-neutral CSV importer for community discussions.</li>
+          <li><strong>Structured the rebuild</strong> on a modular plugin architecture, so new sources plug in without rewrites.</li>
+          <li><strong>Designed for repeatable analysis:</strong> local evidence storage, caching, evidence export, and structured reports make the workflow easier to audit.</li>
+        </ul>
+      </div>
+      <p class="body-copy">I have written about the build on LinkedIn, including a project section with two posts walking through it.</p>
+      <div class="cta-row">
+        
+        <a class="btn ghost" href="https://www.linkedin.com/in/rmadc" target="_blank" rel="noopener noreferrer">See the project on LinkedIn</a>
+      </div>
+      <ul class="tag-list">
+        <li>Audience research</li><li>Social listening</li><li>Sentiment &amp; intent classification</li>
+        <li>Persona building</li><li>Python</li><li>Product thinking</li>
+      </ul>
+    
+<div class="merged-demo-grid" aria-label="Interactive Market58 and AudienceLab walkthroughs">
+<div class="product-grid">
+ <article class="product-card market-card"><div class="product-top"><div class="product-icon">M<span>58</span></div><span class="labelchip">AUDIENCE INTELLIGENCE</span></div>
+ <h3>Market58</h3><div class="interactive-demo-shell"><div class="interactive-demo-bar"><span>● &nbsp; LIVE INTERACTIVE WALKTHROUGH · OFFLINE</span><a href="demos/market58/" target="_blank" rel="noopener noreferrer">Expand ↗</a></div><iframe class="interactive-demo-frame" src="demos/market58/" title="Interactive market58 offline demo" loading="lazy" allow="fullscreen"></iframe></div><p>Public-conversation research, evidence classification, customer pain points, funnel strategy and documented insights — demonstrated with a real Ridgeway Cargo research run.</p>
+ <div class="product-numbers"><span><strong>725</strong><small>records collected</small></span><span><strong>430</strong><small>analyzed in report</small></span><span><strong>3</strong><small>source platforms</small></span></div>
+ <div class="product-actions"><a class="btn" href="demos/market58/" target="_blank" rel="noopener noreferrer">Launch read-only demo ↗</a><a class="btn ghost" href="downloads/Market58_Ridgeway_Cargo_Report.pdf" target="_blank" rel="noopener noreferrer">29-page report ↗</a></div>
+ <p class="product-foot">Original Streamlit workflow recreated in-browser using saved data. Not a live classification run.</p>
+ </article>
+ <article class="product-card lab-card"><div class="product-top"><div class="product-icon lab-icon">◈</div><span class="labelchip">SYNTHETIC PERSONA RESEARCH</span></div>
+ <h3>AudienceLab</h3><div class="interactive-demo-shell"><div class="interactive-demo-bar"><span>● &nbsp; LIVE INTERACTIVE WALKTHROUGH · OFFLINE</span><a href="demos/audiencelab/" target="_blank" rel="noopener noreferrer">Expand ↗</a></div><iframe class="interactive-demo-frame" src="demos/audiencelab/" title="Interactive audiencelab offline demo" loading="lazy" allow="fullscreen"></iframe></div><p>Research-grounded fictional audience personas, a reactive emotional avatar, and structured AI-assisted interviews. Explore Alex's saved interview with real recorded VAD changes.</p>
+ <div class="product-numbers"><span><strong>4</strong><small>selected real exchanges</small></span><span><strong>VAD</strong><small>emotion animation</small></span><span><strong>0</strong><small>new AI calls</small></span></div>
+ <div class="product-actions"><a class="btn" href="demos/audiencelab/" target="_blank" rel="noopener noreferrer">Explore animated interview ↗</a><a class="btn ghost" href="downloads/AudienceLab_Selected_Interview.json" download target="_blank" rel="noopener noreferrer">Download transcript ↓</a></div>
+ <p class="product-foot">Original HTML/CSS/SVG interface retained. The showcased participant is synthetic, not a real customer.</p>
+ </article>
+</div>
+</div>
+</section>
+
+<section class="block" id="experience">
+      <p class="kicker">Where I've worked</p>
+      <h2>Hands on, in more than one seat.</h2>
+      <ul class="timeline">
+        
+        <li>
+          <div class="when">May 2026 – Aug 2026</div>
+          <div class="what"><img class="company-logo middlehouse" src="images/middlehouse-logo.webp" alt="MiddleHouse Developments logo" loading="lazy"><strong><a href="https://www.middlehouse.ca/" target="_blank" rel="noopener noreferrer">MiddleHouse Developments ↗</a> — Social Media Coordinator Intern, Toronto</strong><span>Relaunched the Instagram presence; built the content strategy, framework, and creative system.</span></div>
+        </li>
+        <li>
+          <div class="when">Oct 2026 – Present</div>
+          <div class="what"><img class="company-logo scuba" src="images/scubaseasons-logo.webp" alt="ScubaSeasons logo" loading="lazy"><strong><a href="https://scubaseasons.com/" target="_blank" rel="noopener noreferrer">ScubaSeasons ↗</a> — Marketing Apprentice</strong><span>Audience research across large scuba communities: engagement patterns, pain points, and opportunity lanes.</span></div>
+        </li>
+        <li>
+          <div class="when">Jan 2023 – Dec 2023</div>
+          <div class="what"><strong>DataPath Ltd — BPO Executive, Analytics, Dhaka</strong><span>Advanced Excel reporting and analysis across 100+ U.S. client portfolios; direct client communication on data issues.</span></div>
+        </li>
+      </ul>
+      <div class="card">
+        <h3>Toolkit</h3>
+        <ul class="tag-list">
+          <li>Meta Ads</li><li>Google Analytics</li><li>Content strategy</li><li>Audience research</li>
+          <li>Copywriting</li><li>Python (Pandas)</li><li>SQL</li><li>Advanced Excel</li>
+          <li>Canva</li><li>Affinity Designer &amp; Photo</li>
+        </ul>
+        <p style="margin-top:14px;">Certified: HubSpot Social Media Marketing Certification, IBM Data Science Professional Certificate, Data Analysis with Python, Using Python to Access Web Data.</p>
+        <p>Education: Master of Management, Trent University.</p>
+      </div>
     </section>
 
-    <section id="strategy" class="strategy section-pad">
-      <div class="section-head compact reveal">
-        <p class="kicker">02 / SYSTEMS THINKING</p>
-        <h2>Pretty is not<br/><span>a strategy.</span></h2>
-        <p>The work was organized around audience needs, funnel intent, topic adjacency, and repeatable content architecture.</p>
-      </div>
-      <div class="strategy-grid">
-        <article class="strategy-card reveal" data-tilt>
-          <div class="strategy-number">WHY</div>
-          <h3>Three content tiers</h3>
-          <div class="tier"><span>50%</span><p><strong>Growth</strong> — earn organic attention and address broad housing frustrations without aggressive sales language.</p></div>
-          <div class="tier"><span>15%</span><p><strong>Action</strong> — conversion-led content tied to live buying moments, launches, and releases.</p></div>
-          <div class="tier"><span>35%</span><p><strong>Community</strong> — deepen trust, brand equity, and design transparency.</p></div>
-        </article>
-        <article class="strategy-card reveal delay-1" data-tilt>
-          <div class="strategy-number">HOW</div>
-          <h3>Three operating modes</h3>
-          <ul class="strategy-list"><li><strong>Evergreen</strong><span>Challenge status-quo assumptions and recurring homeownership myths.</span></li><li><strong>Campaigns</strong><span>Time-bound product stories aligned with development phases.</span></li><li><strong>Reactive</strong><span>Use relevance + authority filters to respond to market, economic, and zoning shifts.</span></li></ul>
-        </article>
-        <article class="strategy-card reveal delay-2" data-tilt>
-          <div class="strategy-number">WHAT</div>
-          <h3>Adjacent possible</h3>
-          <p>Move from literal product features into broader audience-aware themes.</p>
-          <div class="rings"><span>Product & Architecture</span><span>Mindset & Lifestyle</span><span>Culture & Urbanism</span></div>
-        </article>
-      </div>
+<section class="block" id="middlehouse-gallery"><p class="kicker">MiddleHouse · Research → Strategy → Execution</p><h2>MiddleHouse: audience-led marketing, not just design.</h2><div class="strategy-case-study">
+  <p class="strategy-lead"><strong>The strategy came first. The designs were its execution.</strong> My role combined audience research, competitive analysis, content planning, creative production and performance reviews—not graphic design alone.</p>
+  <div class="strategy-grid">
+    <div class="strategy-step"><span>01 · RESEARCH</span><strong>Diagnose the audience</strong><p>Audited the previous Instagram account, studied competitors and mapped buyer needs and objections.</p></div>
+    <div class="strategy-step"><span>02 · PLAN</span><strong>Build the content system</strong><p>Developed three content tiers, themes, buyer personas and pain-point-led messages across funnel stages.</p></div>
+    <div class="strategy-step"><span>03 · EXECUTE &amp; LEARN</span><strong>Turn insight into campaigns</strong><p>Created posts and Reels, monitored early account results and refined the approach using performance observations.</p></div>
+  </div>
+  <p class="strategy-result"><strong>Account growth:</strong> The relaunched Instagram account reached a follower count 125% higher than the previous account, with 62.5% fewer posts. <small>Comparison reported from the MiddleHouse project.</small></p>
+  <p class="strategy-caption">Below: selected campaign assets demonstrating how research-led messages became creative execution.</p>
+</div><div class="carousel heritage-gallery" aria-label="MiddleHouse original campaign images">
+<button class="carousel-arrow carousel-prev" aria-label="Previous project image" type="button">‹</button>
+<div class="carousel-track">
+<figure class="carousel-slide"><img loading="lazy" src="assets/images/middlehouse-traffic.webp" alt="MiddleHouse Developments creative: Time reclaimed"><figcaption>Time reclaimed · A commute-focused message</figcaption></figure>
+<figure class="carousel-slide"><img loading="lazy" src="assets/images/middlehouse-walking.webp" alt="MiddleHouse Developments creative: Walking home"><figcaption>Walking home · A lifestyle-driven visual</figcaption></figure>
+<figure class="carousel-slide"><img loading="lazy" src="assets/images/middlehouse-mortgage.webp" alt="MiddleHouse Developments creative: Mortgage decisions"><figcaption>Mortgage decisions · A value-focused campaign</figcaption></figure>
+<figure class="carousel-slide"><img loading="lazy" src="assets/images/middlehouse-space.webp" alt="MiddleHouse Developments creative: Space to grow"><figcaption>Space to grow · A household pain point</figcaption></figure>
+<figure class="carousel-slide"><img loading="lazy" src="assets/images/middlehouse-front-door.webp" alt="MiddleHouse Developments creative: Family & home"><figcaption>Family & home · An aspirational campaign</figcaption></figure>
+<figure class="carousel-slide"><img loading="lazy" src="assets/images/middlehouse-gym.webp" alt="MiddleHouse Developments creative: Daily convenience"><figcaption>Daily convenience · A feature-to-benefit message</figcaption></figure>
+<figure class="carousel-slide"><img loading="lazy" src="assets/images/middlehouse-paint.webp" alt="MiddleHouse Developments creative: Make it yours"><figcaption>Make it yours · A customization-oriented visual</figcaption></figure>
+</div><button class="carousel-arrow carousel-next" aria-label="Next project image" type="button">›</button>
+<div class="carousel-count" aria-live="polite">1 / 7</div></div><div class="reels-block"><p class="kicker">Campaign video execution</p><h3>Short-form campaigns in motion.</h3><p class="heritage-intro">Hover over a Reel to see a short, silent looping preview. Tap to preview on mobile, or open the full video. Previews only download when requested.</p><div class="reel-grid"><figure class="reel"><div class="reel-media"><video muted loop playsinline preload="none" poster="assets/images/poster-condo-fees.webp" data-preview="previews/condo-fees-preview.mp4" aria-label="MiddleHouse Reel: What condo fees buy: silent preview"></video><button class="reel-preview-button" type="button" aria-label="Play or pause MiddleHouse Reel: What condo fees buy preview">▶ Preview</button></div><a class="reel-full-link" href="assets/videos/middlehouse-condo-fees.mp4" target="_blank" rel="noopener noreferrer">Watch full Reel ↗</a><figcaption>What condo fees buy</figcaption></figure>
+<figure class="reel"><div class="reel-media"><video muted loop playsinline preload="none" poster="assets/images/poster-having-kids.webp" data-preview="previews/having-kids-preview.mp4" aria-label="MiddleHouse Reel: Planning for a family: silent preview"></video><button class="reel-preview-button" type="button" aria-label="Play or pause MiddleHouse Reel: Planning for a family preview">▶ Preview</button></div><a class="reel-full-link" href="assets/videos/middlehouse-having-kids.mp4" target="_blank" rel="noopener noreferrer">Watch full Reel ↗</a><figcaption>Planning for a family</figcaption></figure>
+<figure class="reel"><div class="reel-media"><video muted loop playsinline preload="none" poster="assets/images/poster-what-is-home.webp" data-preview="previews/what-is-home-preview.mp4" aria-label="MiddleHouse Reel: What makes a home?: silent preview"></video><button class="reel-preview-button" type="button" aria-label="Play or pause MiddleHouse Reel: What makes a home? preview">▶ Preview</button></div><a class="reel-full-link" href="assets/videos/middlehouse-what-is-home.mp4" target="_blank" rel="noopener noreferrer">Watch full Reel ↗</a><figcaption>What makes a home?</figcaption></figure>
+<figure class="reel"><div class="reel-media"><video muted loop playsinline preload="none" poster="assets/images/poster-renovation.webp" data-preview="previews/renovation-preview.mp4" aria-label="MiddleHouse Reel: Renovation decisions: silent preview"></video><button class="reel-preview-button" type="button" aria-label="Play or pause MiddleHouse Reel: Renovation decisions preview">▶ Preview</button></div><a class="reel-full-link" href="assets/videos/middlehouse-renovation.mp4" target="_blank" rel="noopener noreferrer">Watch full Reel ↗</a><figcaption>Renovation decisions</figcaption></figure></div></div></section>
+
+<section class="block" id="paid">
+      <p class="kicker">Paid media, hands on</p>
+      <h2>I’ve explored Meta Ads, hands on.</h2>
+      <div class="card" style="margin:16px 0"><strong>392 link clicks</strong> · approximately <strong>C$14</strong> spent · approximately <strong>C$0.04 CPC</strong><p class="heritage-intro" style="margin:8px 0 0">Results from a five-day personal Meta traffic test. These are link-click metrics, not purchases or conversions.</p></div>
+      <p class="body-copy">As a personal paid-media project, I planned and ran a Meta and Instagram traffic campaign, working on audience selection, creative, copy, landing destination, and performance monitoring. <strong>Small budget, real money, and real optimization decisions.</strong></p>
+      <figure class="media">
+        <img loading="lazy" decoding="async" src="images/meta-instagram.webp" alt="Meta ads campaign evidence">
+        <figcaption>Campaign setup and reporting from the live campaign.</figcaption>
+      </figure>
+      <ul class="tag-list">
+        <li>Meta Ads</li><li>Audience targeting</li><li>Creative testing</li><li>Campaign optimization</li><li>Performance analytics</li>
+      </ul>
     </section>
 
-    <section id="motion" class="motion section-pad">
-      <div class="section-head reveal">
-        <p class="kicker">03 / MOTION</p>
-        <h2>Campaigns<br/><span>that move.</span></h2>
-        <p>Six short-form pieces from the MiddleHouse project. Tap any card to watch with sound.</p>
+<section class="block" id="duties">
+      <p class="kicker">What I do, hands on</p>
+      <h2>The work, by craft.</h2>
+      <p class="body-copy">Everything below is work I have actually done, not coursework. Each craft maps to the core of professional marketing roles: planning, executing, measuring, and learning.</p>
+      <div class="card">
+        <h3>Campaign planning and execution</h3>
+        <ul class="checklist">
+          <li><strong>Planned, launched, and optimized a Meta and Instagram traffic campaign</strong> end to end: audience approach, creative, copy, landing destination, and performance monitoring.</li>
+          <li><strong>Relaunched a company's Instagram presence from zero</strong> as Social Media Coordinator intern: content system, pain-point-led messaging across funnel stages, competitor benchmarking presented to leadership.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Performance analytics</h3>
+        <ul class="checklist">
+          <li><strong>Read campaign data like a marketer:</strong> creative performance, audience response, and traffic quality, then optimized from what the numbers said.</li>
+          <li><strong>Advanced Excel, Python (Pandas), and SQL</strong> from analytics work across 100+ U.S. client portfolios, with direct client communication on data issues.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Audience research and content strategy</h3>
+        <ul class="checklist">
+          <li><strong>Built Market58</strong>, a social listening app that classifies public conversations by sentiment, intent, and funnel stage, plus AudienceLab for personas and synthetic interviews.</li>
+          <li><strong>Ran audience research across large scuba communities</strong> as a marketing apprentice: engagement patterns, pain points, and opportunity lanes.</li>
+          <li><strong>Built a repeatable content framework</strong> (tiers, themes, audience needs, personas) to guide planning, production, and measurement.</li>
+        </ul>
       </div>
 
-      <div class="video-grid">
-        <button class="video-card reveal" data-video="assets/videos/middlehouse-marriage.mp4" data-title="Marriage is Scary" aria-label="Play Marriage is Scary video">
-          <img src="assets/images/poster-marriage.webp" alt="Marriage is Scary campaign video poster" loading="lazy" /><span class="play">▶</span><div><small>Awareness</small><strong>Marriage is Scary</strong></div>
-        </button>
-        <button class="video-card reveal delay-1" data-video="assets/videos/middlehouse-vacation.mp4" data-title="Vacation" aria-label="Play Vacation campaign video">
-          <img src="assets/images/poster-vacation.webp" alt="Vacation campaign video poster" loading="lazy" /><span class="play">▶</span><div><small>Awareness</small><strong>Vacation</strong></div>
-        </button>
-        <button class="video-card reveal delay-2" data-video="assets/videos/middlehouse-renovation.mp4" data-title="Renovation" aria-label="Play Renovation campaign video">
-          <img src="assets/images/poster-renovation.webp" alt="Renovation campaign video poster" loading="lazy" /><span class="play">▶</span><div><small>Awareness</small><strong>Renovation</strong></div>
-        </button>
-        <button class="video-card reveal" data-video="assets/videos/middlehouse-condo-fees.mp4" data-title="Condo Fees" aria-label="Play Condo Fees campaign video">
-          <img src="assets/images/poster-condo-fees.webp" alt="Condo fees campaign video poster" loading="lazy" /><span class="play">▶</span><div><small>Cost tension</small><strong>Condo Fees</strong></div>
-        </button>
-        <button class="video-card reveal delay-1" data-video="assets/videos/middlehouse-having-kids.mp4" data-title="Having Kids" aria-label="Play Having Kids campaign video">
-          <img src="assets/images/poster-having-kids.webp" alt="Having Kids campaign video poster" loading="lazy" /><span class="play">▶</span><div><small>Family</small><strong>Having Kids</strong></div>
-        </button>
-        <button class="video-card reveal delay-2" data-video="assets/videos/middlehouse-what-is-home.mp4" data-title="What is a Home?" aria-label="Play What is a Home campaign video">
-          <img src="assets/images/poster-what-is-home.webp" alt="What is a Home campaign video poster" loading="lazy" /><span class="play">▶</span><div><small>Brand story</small><strong>What is a Home?</strong></div>
-        </button>
-      </div>
     </section>
 
-    <section class="personal section-pad" aria-labelledby="personal-title">
-      <div class="section-head reveal">
-        <p class="kicker">04 / SELF-DIRECTED CREATIVE</p>
-        <h2 id="personal-title">Ideas without<br/><span>a client brief.</span></h2>
-        <p>Personal exercises in product positioning, visual metaphor, promotion, and campaign concepting.</p>
-      </div>
+<section class="block" id="creative-experiments"><p class="kicker">Independent design practice</p><h2>Creative concepts and visual experiments.</h2><p class="heritage-intro">A few selected pieces from my earlier portfolio. These are design exercises, separate from the paid-media performance results above.</p><div class="design-grid"><figure class="design-piece"><img loading="lazy" src="assets/images/personal-poutine.webp" alt="Independent design concept: Food campaign concept"><figcaption>Food campaign concept</figcaption></figure>
+<figure class="design-piece"><img loading="lazy" src="assets/images/personal-lays.webp" alt="Independent design concept: Consumer product concept"><figcaption>Consumer product concept</figcaption></figure>
+<figure class="design-piece"><img loading="lazy" src="assets/images/personal-ludwig.webp" alt="Independent design concept: Coffee concept"><figcaption>Coffee concept</figcaption></figure>
+<figure class="design-piece"><img loading="lazy" src="assets/images/personal-king.webp" alt="Independent design concept: Lifestyle creative"><figcaption>Lifestyle creative</figcaption></figure></div></section>
 
-      <div class="bento">
-        <figure class="bento-card tall reveal" data-tilt><img src="assets/images/personal-ludwig.webp" alt="Ludwig Coffee visual metaphor poster" loading="lazy"/><figcaption><span>Visual metaphor</span><strong>Ludwig Coffee</strong></figcaption></figure>
-        <figure class="bento-card reveal delay-1" data-tilt><img src="assets/images/personal-king.webp" alt="Live Like a King fashion promotion poster" loading="lazy"/><figcaption><span>Promotion</span><strong>Live Like a King</strong></figcaption></figure>
-        <figure class="bento-card reveal delay-2" data-tilt><img src="assets/images/personal-lays.webp" alt="Lay's Crunchy Bites awareness poster" loading="lazy"/><figcaption><span>Brand awareness</span><strong>Crunchy Bites</strong></figcaption></figure>
-        <figure class="bento-card wide reveal" data-tilt><img src="assets/images/personal-poutine.webp" alt="Triple Cheese Poutine concept poster" loading="lazy"/><figcaption><span>Product launch</span><strong>Triple Cheese Poutine</strong></figcaption></figure>
-        <figure class="bento-card reveal delay-1" data-tilt><img src="assets/images/personal-fries.webp" alt="Grab Some Fries poster" loading="lazy"/><figcaption><span>Break-time awareness</span><strong>Grab Some Fries</strong></figcaption></figure>
-        <figure class="bento-card reveal delay-2" data-tilt><img src="assets/images/personal-drink.webp" alt="Drink and Toss sustainability poster" loading="lazy"/><figcaption><span>Sustainability concept</span><strong>Drink & Toss</strong></figcaption></figure>
-      </div>
-    </section>
 
-    <section id="experiments" class="experiment section-pad">
-      <div class="experiment-head reveal">
-        <p class="kicker">05 / PAID GROWTH EXPERIMENT</p>
-        <h2>A small budget.<br/><span>A measurable test.</span></h2>
-        <p>I ran a Meta/Instagram promotion to test audience response, creative performance, and traffic generation — then read the results as a marketer, not just a designer.</p>
-      </div>
+<div class="card"><strong>More examples:</strong> <a class="asset-link" href="assets/docs/full-portfolio.pdf" target="_blank" rel="noopener noreferrer">Open full creative portfolio (PDF) ↗</a></div>
+<!-- EXPERIENCE -->
+    
 
-      <div class="experiment-layout">
-        <div class="experiment-proof reveal">
-          <img src="assets/images/meta-instagram.webp" alt="Instagram account and campaign proof screenshot" loading="lazy" />
-          <div class="proof-label"><span>Campaign evidence</span><strong>Instagram paid promotion</strong></div>
+<section class="block" id="proof"><p class="kicker">Verified professional feedback</p><h2>What people I’ve worked with say.</h2>
+<p class="body-copy">Direct feedback from my work at MiddleHouse Developments.</p>
+<div class="proof-card"><img loading="lazy" decoding="async" class="proof-avatar" src="images/jason-reference.jpg" alt="Jason Self portrait supplied for portfolio">
+<div><blockquote>“Honestly you're (Robert) doing a great job and I would say the most insightful student we've had for this position, so keep up the great work.”</blockquote>
+<p><strong><a href="https://www.linkedin.com/in/jason-h-self" target="_blank" rel="noopener noreferrer">Jason Self ↗</a></strong> · Co-Founder, MiddleHouse Developments</p>
+<p class="proof-note">Feedback shared June 5, 2026. Original email available upon request.</p></div></div>
+
+</section>
+
+<section class="block" id="contact" style="border-top:0; padding-top:20px;">
+      <div class="final">
+        <h2>Let's talk.</h2>
+        <p>Hiring for a marketing role, or just want to talk shop? Call, message, or email, whichever is easiest for you.</p>
+        <div class="cta-row" style="justify-content:center;">
+          <a class="btn" href="tel:+16473555872">Call me</a>
+          <a class="btn ghost" href="https://wa.me/16473555872" target="_blank" rel="noopener noreferrer">Message me</a>
+          <a class="btn ghost" href="mailto:dcosta.arnob@gmail.com?subject=Hello%20—%20from%20arnob58.com">Email me</a>
         </div>
-        <div class="experiment-stats reveal delay-1">
-          <div><strong data-count="3436">0</strong><span>Ad views</span></div>
-          <div><strong data-count="2041">0</strong><span>Reach</span></div>
-          <div><strong data-count="392">0</strong><span>Link clicks</span></div>
-          <div><strong data-count="372">0</strong><span>Profile visits</span></div>
-          <div><strong data-count="19">0</strong><span>Saves</span></div>
-          <div><strong data-count="0.036" data-prefix="$" data-decimals="3">0</strong><span>Approx. CAD CPC</span></div>
-        </div>
-      </div>
-
-      <div class="creative-reel" aria-label="Meta ad creative carousel">
-        <div class="creative-track">
-          <img src="assets/images/meta-1.webp" alt="Meta ad creative: Do you feel like your life doesn't matter?" loading="lazy"/>
-          <img src="assets/images/meta-2.webp" alt="Meta ad creative: crown of thorns concept" loading="lazy"/>
-          <img src="assets/images/meta-3.webp" alt="Meta ad creative: Jeremiah quotation concept" loading="lazy"/>
-          <img src="assets/images/meta-4.webp" alt="Meta ad creative: Ephesians quotation concept" loading="lazy"/>
-          <img src="assets/images/meta-5.webp" alt="Meta ad creative: hope and future concept" loading="lazy"/>
-          <img src="assets/images/meta-6.webp" alt="Meta ad creative: save reminder" loading="lazy"/>
-          <img src="assets/images/meta-1.webp" alt="" aria-hidden="true" loading="lazy"/>
-          <img src="assets/images/meta-2.webp" alt="" aria-hidden="true" loading="lazy"/>
-          <img src="assets/images/meta-3.webp" alt="" aria-hidden="true" loading="lazy"/>
-        </div>
+        <p style="margin-top:24px; font-size:15px;">Prefer LinkedIn? <a href="https://www.linkedin.com/in/rmadc" style="color:#fff; text-decoration:underline;" target="_blank" rel="noopener noreferrer">Find me here</a>.</p>
       </div>
     </section>
 
-    <section id="tools" class="tools section-pad reveal">
-      <div class="section-head tools-head">
-        <p class="kicker">06 / TOOLKIT</p>
-        <h2>Tools I use to<br/><span>think & build.</span></h2>
-        <p>My workflow crosses marketing, analytics, design, and lightweight development — useful when a problem needs more than one kind of answer.</p>
-      </div>
-      <div class="tool-groups">
-        <article class="tool-group"><span class="micro">MARKETING & MEASUREMENT</span><div class="tool-chips"><span>Meta Ads</span><span>Google Analytics</span><span>Performance Analytics</span><span>Audience Analysis</span></div></article>
-        <article class="tool-group"><span class="micro">DATA & ANALYSIS</span><div class="tool-chips"><span>Advanced Excel</span><span>Python · Pandas</span><span>SQL</span><span>Regression Analysis</span></div></article>
-        <article class="tool-group"><span class="micro">CREATIVE</span><div class="tool-chips"><span>Canva</span><span>Affinity</span><span>Content Strategy</span><span>Copywriting</span><span>Design Principles</span></div></article>
-        <article class="tool-group"><span class="micro">TECHNICAL</span><div class="tool-chips"><span>C#</span><span>Data Workflows</span><span>Reporting Automation</span></div></article>
-      </div>
-      <p class="tool-note">Also certified through the IBM Data Science Professional Certificate, Data Analysis with Python, and Using Python to Access Web Data.</p>
-    </section>
+  </div>
+</main>
 
-    <section class="writing section-pad reveal">
-      <p class="kicker">07 / LONG-FORM WRITING</p>
-      <div class="writing-grid">
-        <div><h2>Before ads,<br/>I wrote <span>ideas.</span></h2><p>Independent long-form educational writing since 2017 — across psychology, marketing, artificial intelligence, philosophy, book reviews, and technology.</p></div>
-        <div class="writing-stats"><div><strong>9</strong><span>Years writing</span></div><div><strong>2,300+</strong><span>Medium views</span></div><div><strong>1,400+</strong><span>Medium reads</span></div></div>
-      </div>
-      <div class="topics"><span>Psychology</span><span>Marketing</span><span>Artificial Intelligence</span><span>Philosophy</span><span>Book Reviews</span><span>Technology</span></div>
-    </section>
+<footer>
+  <div class="wrap">
+    Robert Mark Arnob D' Costa · Toronto, ON · <a href="mailto:dcosta.arnob@gmail.com">dcosta.arnob@gmail.com</a> · <a href="https://www.linkedin.com/in/rmadc" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+  </div>
+</footer>
 
-    <section class="closing section-pad">
-      <div class="closing-inner reveal">
-        <p class="kicker">THE THROUGH-LINE</p>
-        <h2>Research the tension.<br/>Build the idea.<br/><span>Measure what happens.</span></h2>
-        <div class="closing-actions">
-          <a class="button primary" href="assets/docs/arnob-dcosta-resume.pdf" target="_blank" rel="noopener">View résumé ↗</a>
-          <a class="button ghost" href="assets/docs/full-portfolio.pdf" target="_blank" rel="noopener">Full case-study PDF ↗</a>
-          <a class="button ghost" href="#top">Back to top ↑</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer section-pad">
-    <div><span class="brand-mark small">A</span><strong>Robert Mark Arnob D' Costa</strong></div>
-    <p>Digital marketing · creative strategy · analytics</p>
-    <p>© <span id="year"></span> · Built as an interactive portfolio.</p>
-  </footer>
-
-  <dialog class="video-modal" id="video-modal">
-    <button class="modal-close" aria-label="Close video">×</button>
-    <div class="modal-frame"><video id="modal-video" controls playsinline></video></div>
-    <p id="modal-title"></p>
-  </dialog>
-
-  <script src="main.js" defer></script>
-</body>
+<script>
+document.querySelectorAll('.carousel').forEach(carousel=>{
+ const track=carousel.querySelector('.carousel-track'),slides=[...track.children],count=carousel.querySelector('.carousel-count');
+ const go=delta=>{const idx=Math.round(track.scrollLeft/track.clientWidth);track.scrollTo({left:((idx+delta+slides.length)%slides.length)*track.clientWidth,behavior:'smooth'});};
+ carousel.querySelector('.carousel-prev').addEventListener('click',()=>go(-1));
+ carousel.querySelector('.carousel-next').addEventListener('click',()=>go(1));
+ track.addEventListener('scroll',()=>{count.textContent=(Math.min(slides.length,Math.round(track.scrollLeft/track.clientWidth)+1))+' / '+slides.length},{passive:true});
+});
+</script><button class="to-top" type="button" title="Back to top" aria-label="Back to top" aria-hidden="true" tabindex="-1">↑</button>
+<script src="motion.js" defer></script>
+<script defer src="reel-previews.js"></script></body>
 </html>

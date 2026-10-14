@@ -1,0 +1,1 @@
+All external websites, full video links, reports, exports, and expanded demo links open in a new tab. On-page section navigation (#anchors) remains in the current tab for smooth scrolling. Phone and email links retain native phone/email behavior. No deployment performed.

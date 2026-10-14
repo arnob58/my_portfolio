@@ -1,0 +1,1 @@
+OFFLINE preview only. Restored full paid-media case study to main page and nav, preserving Hire Me page. Replaced irregular transparent hero cutout with framed photograph on both pages. Interactive demos and other sections unchanged. No GitHub push or Cloudflare deployment.
