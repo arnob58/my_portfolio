@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Market58 · Audience Lab</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+<header class="topbar"><div class="brand"><span class="brandicon">◈</span> MARKET<span class="accent">58</span><span class="slash">/</span><span class="product">AUDIENCE LAB</span></div><div class="right"><span class="dot"></span><span id="mode">OFFLINE · REPLAY</span><span class="pilot">NO API / READ-ONLY</span></div></header>
+<main class="layout">
+<aside class="panel leftpanel">
+  <div class="eyebrow">01 / RESEARCH SOURCE</div>
+  <h2>Give your audience<br><em>a voice.</em></h2>
+  <p class="muted">Explore a previously generated fictional research persona through a guided interview replay.</p>
+  <div class="dropzone" id="dropzone"><span class="upload-icon">▤</span><span class="readonly-label">Research source — locked</span><strong id="reportLabel">Ridgeway_Cargo_Audience_Report.md</strong><small>Predetermined sample · Generated October 2026</small></div>
+  <button class="primary full" id="startBtn">Meet Alex · play original interview <span>↗</span></button>
+  <p class="caption">A guided replay of selected actual generated exchanges — no file upload or AI inference.</p>
+  <div class="divider"></div>
+  <div class="eyebrow">02 / PERSONA PROFILE</div>
+  <div id="personaInfo" class="personaInfo"><div class="emptyState">Create an audience to reveal its research profile.</div></div>
+  <div class="divider"></div>
+  <div class="bottomnote">SYNTHETIC ≠ OBSERVED<br><span>Never treat simulated interviews as real consumer evidence.</span></div>
+</aside>
+<section class="center">
+  <div class="centerhead"><div><div class="eyebrow">INTERVIEW ROOM / REPLAY</div><h1 id="roomTitle">Meet your audience.</h1><a class="backtop" href="../../hire-me/#ai-projects" target="_blank" rel="noopener noreferrer">← Back to portfolio</a></div><a class="outline" id="exportBtn" href="../../downloads/AudienceLab_Selected_Interview.json" download target="_blank" rel="noopener noreferrer">↓ Export curated JSON</a></div>
+  <div class="avatarPanel"><div class="orbit orbit1"></div><div class="orbit orbit2"></div>
+    <div class="avatarWrap"><svg id="avatar" viewBox="0 0 340 306" role="img" aria-label="Animated fictional digital persona face">
+      <defs><radialGradient id="headfill" cx="48%" cy="35%" r="85%"><stop offset="0" stop-color="#37647f"/><stop offset="1" stop-color="#142e45"/></radialGradient><linearGradient id="glow" x1="0" x2="1"><stop stop-color="#55e0cc"/><stop offset="1" stop-color="#598ffd"/></linearGradient></defs>
+      <path d="M95 272 Q91 237 131 229 Q169 219 209 229 Q248 242 246 272" fill="#142c43" stroke="#5083aa" stroke-width="2"/>
+      <path d="M154 210 L154 240 Q170 248 187 239 L187 208" fill="#244763" stroke="#6acaba" stroke-opacity=".5"/>
+      <ellipse cx="170" cy="145" rx="103" ry="122" fill="url(#headfill)" stroke="url(#glow)" stroke-width="2.3"/>
+      <path d="M94 90 Q170 12 244 92" stroke="#9fe6e5" stroke-opacity=".20" stroke-width="2" fill="none"/>
+      <ellipse cx="66" cy="157" rx="11" ry="25" fill="#21415b" stroke="#52b6b7" stroke-width="2"/><ellipse cx="274" cy="157" rx="11" ry="25" fill="#21415b" stroke="#52b6b7" stroke-width="2"/>
+      <g id="face"><path id="leftBrow" d="M105 118 Q126 104 145 118" stroke="#a0f5e9" stroke-width="7" stroke-linecap="round" fill="none"/><path id="rightBrow" d="M194 118 Q215 104 235 118" stroke="#a0f5e9" stroke-width="7" stroke-linecap="round" fill="none"/>
+      <ellipse id="leftEye" cx="125" cy="151" rx="16" ry="12" fill="#a8fdf0"/><ellipse id="rightEye" cx="214" cy="151" rx="16" ry="12" fill="#a8fdf0"/>
+      <circle id="leftPupil" cx="126" cy="152" r="6.7" fill="#103148"/><circle id="rightPupil" cx="215" cy="152" r="6.7" fill="#103148"/>
+      <path d="M169 155 L165 185 Q170 188 177 184" stroke="#4e92a2" stroke-width="2" fill="none"/>
+      <path id="mouth" d="M126 213 Q169 227 213 213" stroke="#9ffff0" stroke-width="6" stroke-linecap="round" fill="none"/>
+      <ellipse cx="170" cy="259" rx="24" ry="3" fill="#63ffde" opacity=".25"/>
+      </g>
+      <g fill="none" stroke="#5cb5c1" opacity=".36"><path d="M40 90 V45 H83"/><path d="M300 90 V45 H258"/><path d="M40 223 V266 H83"/><path d="M300 223 V266 H258"/></g>
+    </svg></div>
+    <div class="stateLabel"><span class="dot"></span><span id="avatarStatus">AWAITING PERSONA</span></div>
+    <div class="expr" id="expression">Ready to listen</div><div class="heartReadout"><span class="beat">♥</span> HEART STATE <strong id="heartLabel">Relaxed</strong><span id="heartValue">25%</span></div><div class="vad"><div><small>VALENCE</small><b id="vval">0.00</b><div class="meter"><i id="vbar"></i></div></div><div><small>AROUSAL</small><b id="aval">0.25</b><div class="meter"><i id="abar"></i></div></div><div><small>DOMINANCE</small><b id="dval">0.50</b><div class="meter"><i id="dbar"></i></div></div></div>
+  </div>
+  <div class="explanation"><span class="sig">✧</span><span><b>Continuous affect.</b> This avatar is driven by persistent VAD values; expressions interpolate automatically. Emotions are simulated, not measured.</span></div>
+</section>
+<aside class="panel chatpanel"><div class="chatHeader"><div><div class="eyebrow">03 / INTERVIEW</div><h2>Conversation</h2></div><span class="chatcounter" id="counter">0 TURNS</span></div>
+  <div class="messages" id="messages"><div class="welcome"><span>✧</span><h3>The interview begins here.</h3><p>Start the pre-recorded guided interview to watch the animated avatar respond to genuine questions from a saved session.</p></div></div>
+  <div class="chatForm" id="chatForm"><div class="demo-label">READ-ONLY CHAT · Questions and responses are taken from a saved synthetic interview. Use Next / Previous to advance. Text entry is disabled.</div><div class="demo-controls"><button id="previous" type="button" disabled>← Previous</button><small id="stepLabel">0 / 4 exchanges</small><button id="next" class="primary-mini" type="button" disabled>Next exchange →</button><button id="auto" type="button" disabled>▶ Auto-play</button></div><div class="demo-banner">This is a fictional persona. Responses and emotions are prerecorded, not produced live.</div></div>
+</aside></main>
+<div class="toast" id="toast" role="alert" aria-live="polite"></div>
+<script src="app-demo.js"></script>
+</body></html>

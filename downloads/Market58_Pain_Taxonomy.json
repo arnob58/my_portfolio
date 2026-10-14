@@ -1,0 +1,118 @@
+{
+  "categories": [
+    {
+      "id": "intrusive_ad_interruptions",
+      "label": "Intrusive ad interruptions",
+      "definition": "Frequent or forced ads interrupt play so heavily that players consider quitting or uninstalling.",
+      "example": "30 seconds of play.......3 minutes of ads.",
+      "evidence_ids": [
+        "302658c4c4e2a7bc187adb1e93c39af55fb7c4adadc27f0ae6fe83aeabb050ae"
+      ]
+    },
+    {
+      "id": "misleading_gameplay_advertising",
+      "label": "Ads misrepresent gameplay",
+      "definition": "Players feel the game they download does not match the gameplay that attracted them in its advertisement.",
+      "example": "Nothing makes me uninstall faster than booting up a game that looked fun and then it's nothing like the ad.",
+      "evidence_ids": [
+        "89587100dad31d8a5635246d1673e01fff6ad80f977d66eb5920a672ee28b644"
+      ]
+    },
+    {
+      "id": "pay_to_progress",
+      "label": "Pay-to-progress pressure",
+      "definition": "Players reject games when meaningful progress or content feels effectively locked behind additional spending.",
+      "example": "If there's something in the game that is pretty much impossible to get without paying more im not going to play",
+      "evidence_ids": [
+        "0ef6f80095b7fbaf1498a24a130f5e09aa85d8f241b134d73531341946137431"
+      ]
+    },
+    {
+      "id": "mobile_performance_issues",
+      "label": "Performance and compatibility problems",
+      "definition": "Lag or device incompatibility disrupts or prevents smooth gameplay on mobile.",
+      "example": "it's very laggy",
+      "evidence_ids": [
+        "5ffdc9cac34dfefb8b3fcce7266f3f4578cdf70712c6bbdd2a6a6237482162d6"
+      ]
+    },
+    {
+      "id": "control_and_menu_regressions",
+      "label": "Control and menu regressions",
+      "definition": "Updates can disrupt familiar control inputs and make menu navigation frustrating.",
+      "example": "the cursor / focus point was constantly scrolling up.",
+      "evidence_ids": [
+        "f90eb8afa302ea03f662fbd630430b83320bb8e5ae6906fbeebc8988dc53f19f"
+      ]
+    },
+    {
+      "id": "overbearing_onboarding",
+      "label": "Overbearing onboarding",
+      "definition": "Long tutorials and frequent prompts get in the way of players starting freely and immersing themselves in the game.",
+      "example": "I just want to play and figure the game out myself",
+      "evidence_ids": [
+        "84a312bce5ac05e5a069670b2b47606537a12523712995384eb5213a53624c9b"
+      ]
+    },
+    {
+      "id": "consent_screen_friction",
+      "label": "Consent-screen friction",
+      "definition": "Players are frustrated by having to navigate numerous privacy or consent choices before they can reach gameplay.",
+      "example": "have to click past more than five things just to get into the actual game",
+      "evidence_ids": [
+        "c8782f2f2563e29323fdc998bf0459e6b69994f1c9be06101e9ab0ceab0692d2"
+      ]
+    }
+  ],
+  "sample_size": 150,
+  "keywords": [
+    "game",
+    "truck",
+    "mobile",
+    "it's",
+    "simulator",
+    "games",
+    "play",
+    "europe",
+    "mods",
+    "best",
+    "truck simulator",
+    "don't",
+    "truckers",
+    "truckers europe",
+    "good",
+    "paid",
+    "will",
+    "first",
+    "because",
+    "even",
+    "real",
+    "people",
+    "phone",
+    "something",
+    "want",
+    "free",
+    "know",
+    "mobile game",
+    "which",
+    "only",
+    "playing",
+    "update",
+    "better",
+    "thanks",
+    "every",
+    "make",
+    "money",
+    "still",
+    "graphics",
+    "rain",
+    "time",
+    "different",
+    "same",
+    "these",
+    "work"
+  ],
+  "fingerprint": "83aa5baa67ffff3055bfa2a6d8cf63260e2bd741c775738cc158dcf70925e1b6",
+  "sampling_method": "fixed-seed platform/source-stratified",
+  "taxonomy_revision": 4
+}
